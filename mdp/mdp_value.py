@@ -5,7 +5,8 @@ Created on Mon Mar 27 21:09:18 2017
 @author: Administrator
 """
 
-from mdp import *
+from mdp import Mdp
+import random
 
 random.seed(0)
 
@@ -17,7 +18,7 @@ def random_pi():
 def compute_random_pi_state_value():
     value = [0.0 for r in xrange(9)]
     #大数模拟求均值
-    num = 1000000
+    num = 100000
     
     for k in xrange(1,num):
         for i in xrange(1,6):
