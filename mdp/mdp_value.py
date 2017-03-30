@@ -31,7 +31,7 @@ def compute_random_pi_state_value():
                 a = random_pi()
                 is_terminal,s,r = mdp.transform(s,a)
                 v += gamma * r
-                gamma *= 0.5
+                gamma *= mdp.gamma
             
             value[i] = (value[i] * (k-1) + v) / k
         if k % 10000 == 0:

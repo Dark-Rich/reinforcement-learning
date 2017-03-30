@@ -46,13 +46,13 @@ class Mdp:
         else:
             next_state = state
         
-        is_teminal = False
+        is_terminal = False
         if next_state in self.terminal_states:
-            is_teminal = True
+            is_terminal = True
         
         if key not in self.rewards:
             r = 0.0
         else:
             r = self.rewards[key]
         
-        return is_teminal,next_state,r
+        return is_terminal,next_state,r
