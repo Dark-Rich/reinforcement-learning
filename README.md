@@ -7,3 +7,6 @@
 - mdp.py
 - policy_iteration.py
 - value_iteration.py
+# model-free-prediction
+- mdp.py
+- model_free_policy_evaluation.py
