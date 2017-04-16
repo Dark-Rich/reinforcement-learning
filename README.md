@@ -1,5 +1,7 @@
 # reinforcement-learning
-##强化学习
+强化学习
+
+---
 # mdp
 - mdp.py
 - mdp_value.py
@@ -10,3 +12,6 @@
 # model-free-prediction
 - mdp.py
 - model_free_policy_evaluation.py
+# model-free-control
+- mdp.py
+- model_free_control.py
