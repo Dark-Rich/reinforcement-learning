@@ -5,12 +5,11 @@ Created on Wed Apr 19 13:53:51 2017
 @author: Administrator
 """
 
-
 ###############  Compute the gaps between current q and the best q ######
 class Evaler:
     def __init__(self, mdp):
         self.mdp = mdp
-        self.best = dict();
+        self.best = dict()
         f = open("./best_qfunc.txt")
         for line in f:
             line = line.strip()

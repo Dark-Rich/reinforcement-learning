@@ -17,7 +17,7 @@ random.seed(0)
 
 def update(policy, f, a, tvalue, alpha):
     pvalue        = policy.qfunc(f, a)
-    error         = pvalue - tvalue;
+    error         = pvalue - tvalue
     fea           = policy.get_fea_vec(f, a)
     policy.theta -= alpha * error * fea
 
@@ -88,7 +88,7 @@ def sarsa(mdp, policy, evaler, num_iter, alpha):
             a           = a1
             count      += 1
 
-    return policy, y;
+    return policy, y
 
 def qlearning(mdp, policy, evaler, num_iter, alpha):
     actions = mdp.actions
@@ -101,7 +101,7 @@ def qlearning(mdp, policy, evaler, num_iter, alpha):
     for i in xrange(num_iter):
         y.append(evaler.eval(policy))
 
-        f = mdp.start();    
+        f = mdp.start()    
         a = actions[int(random.random() * len(actions))]
         t = False
         count = 0

@@ -28,7 +28,7 @@ class MdpId:
             self.current = initial_state
 
         #feature of states
-        self.feas    = dict();
+        self.feas    = dict()
         self.feas[1] = np.array([1,0,0,0,0,0,0,0])
         self.feas[2] = np.array([0,1,0,0,0,0,0,0])
         self.feas[3] = np.array([0,0,1,0,0,0,0,0])
@@ -124,7 +124,7 @@ class MdpWall:
             self.current = initial_state
 
         #feature of states
-        self.feas    = dict();
+        self.feas    = dict()
         self.feas[1] = np.array([1,0,0,1])
         self.feas[2] = np.array([1,0,1,0])
         self.feas[3] = np.array([1,0,0,0])
@@ -172,7 +172,7 @@ class MdpWall:
             if initial_state in self.terminal_states:
                 raise Exception("initial_state(%d) is a terminal state"%\
                                 (initial_state))
-            self.current = initial_state;
+            self.current = initial_state
 
         return self.feas[self.current]
 
