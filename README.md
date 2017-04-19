@@ -15,3 +15,13 @@
 # model-free-control
 - mdp.py
 - model_free_control.py
+# value-function-approximation
+- mdp.py
+- evaler.py
+- policy.py
+- value_function_approximation.py
+# policy-gradient
+- mdp.py
+- evaler.py
+- policy.py
+- policy_gradient.py
