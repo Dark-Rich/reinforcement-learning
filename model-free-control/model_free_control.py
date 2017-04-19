@@ -4,7 +4,7 @@ Created on Fri Mar 31 21:45:12 2017
 
 @author: Administrator
 """
- 
+
 from mdp import Mdp
 import random
 import matplotlib.pyplot as plt
@@ -134,7 +134,6 @@ def sarsa(num_iter,alpha,epsilon):
         
         s = states[int(random.random() * len(states))]
         a = actions[int(random.random() * len(actions))]
-#        a = epsilon_greedy(qfunc,s,epsilon)
         t = False
         count = 0
         while t == False and count < 100:
@@ -169,7 +168,6 @@ def qlearning(num_iter,alpha,epsilon):
         
         s = states[int(random.random() * len(states))]
         a = actions[int(random.random() * len(actions))]
-#        a = epsilon_greedy(qfunc,s,epsilon)
         t = False
         count = 0
         while t == False and count < 100:
